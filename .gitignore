@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+env/
+
+# Data (optional - keep if large)
+#data/raw/
+#data/processed/
+
+# Chroma DB (if you add later)
+chroma_db/
+
+# Results
+results/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
