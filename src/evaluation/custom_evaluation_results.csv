@@ -1,0 +1,71 @@
+Query,Generated_Answer,Ground_Truth,Similarity_Score,Exact_Match,Faithfulness,Retrieval_Precision,Word_Count,Timestamp
+"1. What is the number of ASB reports in Petersfield Ward for the months of January, February and March 2025","Based on the data retrieved, there are 16 matching records.",,0.249,N/A,0.2,N/A,10,2026-05-04 23:45:27
+2. What is the number of ASB reports in Castle Ward for 2025,"Based on the data retrieved, there are 17 matching records.",,0.28,N/A,0.3,N/A,10,2026-05-04 23:45:27
+3. Which LSOA in Cambridgeshire has the most reports of shoplifting in 2025,The LSOA with the highest reports is South Cambridgeshire 021A with 3 cases.,,0.712,N/A,0.538,N/A,13,2026-05-04 23:45:27
+4. Rank the top 10 LSOA in Cambridgeshire for Shoplifting in 2025,"Top LSOAs:
+1. South Cambridgeshire 021A (3 cases)
+2. Cambridge 007C (2 cases)
+3. Cambridge 001B (2 cases)
+4. Huntingdonshire 020B (1 cases)
+5. Cambridge 009C (1 cases)
+6. Cambridge 006A (1 cases)
+7. Cambridge 007H (1 cases)
+8. Cambridge 006D (1 cases)
+9. Huntingdonshire 007D (1 cases)
+10. Huntingdonshire 006C (1 cases)",,0.628,N/A,0.415,N/A,53,2026-05-04 23:45:27
+5. Which Output Area in Market Ward has the most reports of shoplifting,No ward data found.,,0.35,N/A,0.25,N/A,4,2026-05-04 23:45:27
+6. Identify the top Output Area in Huntingdon East Ward for Shoplifting,"Top Locations:
+1. On Or Near Howell Drive (10 cases)
+2. On Or Near Needingworth Road (7 cases)
+3. On Or Near Bec Road (5 cases)
+4. On Or Near Napier Place (3 cases)
+5. On Or Near Keeling Lane (2 cases)
+6. On Or Near Thrapston Road (2 cases)
+7. On Or Near The Maltings (2 cases)
+8. On Or Near High Street (2 cases)
+9. On Or Near Cowgate (2 cases)
+10. On Or Near Huntingdon Street (1 cases)",,0.49,N/A,0.617,N/A,81,2026-05-04 23:45:27
+"7. Rank the top LSOA in Cambridgeshire for Burglary offences in April, May and June 2025","Top LSOAs:
+1. Cambridge 007J (2 cases)
+2. Cambridge 007C (2 cases)
+3. Cambridge 007I (2 cases)
+4. South Cambridgeshire 013D (1 cases)
+5. Cambridge 005F (1 cases)
+6. Cambridge 001B (1 cases)
+7. Cambridge 005E (1 cases)
+8. Cambridge 010E (1 cases)
+9. Cambridge 006D (1 cases)
+10. Huntingdonshire 003C (1 cases)",,0.677,N/A,0.415,N/A,53,2026-05-04 23:45:27
+8. How many bicycle thefts occurred in East Chesterton Ward from January to June 2025,"Based on the data retrieved, there are 12 matching records.",,0.175,N/A,0.4,1.0,10,2026-05-04 23:45:27
+9. Which LSOA had the most robbery offences in 2025,The LSOA with the highest reports is Cambridge 007C with 3 cases.,,0.454,N/A,0.333,N/A,12,2026-05-04 23:45:27
+10. Which Ward had the most robbery offences in 2025,No ward data found.,,0.348,N/A,0.25,N/A,4,2026-05-04 23:45:28
+11. Which Output Area had the most robbery offences in 2025,The area with the highest crimes is On Or Near Parking Area with 2 incidents.,,0.552,N/A,0.467,N/A,15,2026-05-04 23:45:28
+12. Which Local Authority had the most robbery offences in 2025,,,0.073,N/A,0.0,N/A,0,2026-05-04 23:45:28
+13. Which LSOA had the most vehicle crime in 2025,The LSOA with the highest reports is Huntingdonshire 003B with 2 cases.,,0.522,N/A,0.333,N/A,12,2026-05-04 23:45:28
+14. Which Ward had the most vehicle crime in 2025,No ward data found.,,0.406,N/A,0.25,N/A,4,2026-05-04 23:45:28
+15. Which Output Area had the most vehicle crime in 2025,The area with the highest crimes is On Or Near Parking Area with 3 incidents.,,0.583,N/A,0.667,N/A,15,2026-05-04 23:45:28
+16. Which Local Authority had the most vehicle crime in 2025,,,0.091,N/A,0.0,N/A,0,2026-05-04 23:45:28
+17. Which LSOA had the most public order offences in 2025,The LSOA with the highest reports is Cambridge 015C with 1 cases.,,0.507,N/A,0.333,N/A,12,2026-05-04 23:45:28
+18. Which Ward had the most public order offences in 2025,No ward data found.,,0.357,N/A,0.0,N/A,4,2026-05-04 23:45:28
+19. Which Output Area had the most public order offences in 2025,The area with the highest crimes is On Or Near Dover Road with 1 incidents.,,0.452,N/A,0.667,N/A,15,2026-05-04 23:45:28
+20. Which Local Authority had the most public order offences in 2025,,,0.101,N/A,0.0,N/A,0,2026-05-04 23:45:28
+21. Which LSOA had the most drug offences in 2023,The LSOA with the highest reports is Cambridge 002A with 3 cases.,,0.511,N/A,0.583,N/A,12,2026-05-04 23:45:28
+22. Which Ward had the most drug offences in 2023,No ward data found.,,0.384,N/A,0.25,N/A,4,2026-05-04 23:45:28
+23. Which Output Area had the most drug offences in 2023,The area with the highest crimes is On Or Near Campbell Street with 1 incidents.,,0.444,N/A,0.667,N/A,15,2026-05-04 23:45:28
+24. Which Local Authority had the most drug offences in 2023,,,0.088,N/A,0.0,N/A,0,2026-05-04 23:45:28
+25. Which LSOA had the most possession of weapons crime in 2023,The LSOA with the highest reports is Cambridge 001B with 2 cases.,,0.439,N/A,0.583,N/A,12,2026-05-04 23:45:28
+26. Which Ward had the most possession of weapons crime in 2023,No ward data found.,,0.384,N/A,0.25,N/A,4,2026-05-04 23:45:28
+27. Which Output Area had the most possession of weapons crime in 2023,The area with the highest crimes is On Or Near Dundee Close with 2 incidents.,,0.412,N/A,0.667,N/A,15,2026-05-04 23:45:28
+28. Which Local Authority had the most possession of weapons crime in 2023,,,0.044,N/A,0.0,N/A,0,2026-05-04 23:45:28
+29. Which LSOA had the most burglary offences in 2023,The LSOA with the highest reports is Cambridge 002D with 1 cases.,,0.465,N/A,0.5,N/A,12,2026-05-04 23:45:29
+30. Which Ward had the most burglary offences in 2023,No ward data found.,,0.374,N/A,0.25,N/A,4,2026-05-04 23:45:29
+31. Which Output Area had the most burglary offences in 2023,The area with the highest crimes is On Or Near Verulam Way with 1 incidents.,,0.569,N/A,0.6,N/A,15,2026-05-04 23:45:29
+32. Which Local Authority had the most burglary offences in 2023,,,0.089,N/A,0.0,N/A,0,2026-05-04 23:45:29
+33. Which LSOA had the most criminal damage and arson offences in 2022,The LSOA with the highest reports is Cambridge 001E with 2 cases.,,0.499,N/A,0.5,N/A,12,2026-05-04 23:45:29
+34. Which Ward had the most criminal damage and arson offences in 2022,No ward data found.,,0.406,N/A,0.25,N/A,4,2026-05-04 23:45:29
+35. Which Output Area had the most criminal damage and arson offences in 2022,The area with the highest crimes is On Or Near Lythemere with 1 incidents.,,0.537,N/A,0.643,N/A,14,2026-05-04 23:45:29
+36. Which Local Authority had the most criminal damage and arson offences in 2022,,,0.045,N/A,0.0,N/A,0,2026-05-04 23:45:29
+37. Which LSOA had the most violence and sexual offences in 2024,The LSOA with the highest reports is South Cambridgeshire 001A with 2 cases.,,0.458,N/A,0.615,1.0,13,2026-05-04 23:45:29
+38. Which Ward had the most violence and sexual offences in 2024,No ward data found.,,0.403,N/A,0.25,1.0,4,2026-05-04 23:45:29
+39. Which Output Area had the most violence and sexual offences in 2024,The area with the highest crimes is On Or Near Clyde Road with 1 incidents.,,0.52,N/A,0.667,1.0,15,2026-05-04 23:45:29
+40. Which Local Authority had the most violence and sexual offences in 2024,,,0.067,N/A,0.0,1.0,0,2026-05-04 23:45:29

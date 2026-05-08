@@ -1,4 +1,4 @@
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from src.embedding.embedder import load_embedding_model
 
 def load_retriever():
@@ -10,4 +10,4 @@ def load_retriever():
         allow_dangerous_deserialization=True
     )
 
-    return db.as_retriever(search_kwargs={"k": 5})
+    return db.as_retriever(search_kwargs={"k":50})

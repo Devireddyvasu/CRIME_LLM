@@ -1,7 +1,21 @@
-Query,Generated_Answer,Ground_Truth,Similarity_Score,Exact_Match
-Which location has the most theft cases?,,,,
-Where do crimes occur most?,,,,
-Top area for theft incidents?,,,,
-What is the most common crime type?,,,,
-What is the most common outcome of crimes?,,,,
-Where do crimes occur most and what type of crimes are common?,,,,
+Query,Generated_Answer,Ground_Truth,Similarity_Score,Exact_Match,Faithfulness,Retrieval_Precision,Word_Count,Timestamp
+What is the most frequent outcome on or near broadweir?,"The area with the highest crimes is On Or Near Broadweir with 6 incidents.
+The most frequent outcome is 'Local Resolution' with 12 cases.",Investigation complete; no suspect identified,0.677,False,0.542,1.0,24,2026-05-05 19:59:54
+What is the most common crime type on or near high road?,"The area with the highest crimes is On Or Near Rampton Drift with 9 incidents.
+The most common crime type is Bicycle Theft with 34 cases.",Violence and sexual offences,0.704,False,0.654,N/A,26,2026-05-05 19:59:54
+What is the most frequent outcome on or near stanley avenue?,"The area with the highest crimes is On Or Near Albany Walk with 16 incidents.
+The most frequent outcome is 'Unable To Prosecute Suspect' with 23 cases.",Under investigation,0.487,False,0.593,1.0,27,2026-05-05 19:59:54
+What is the most frequent outcome on or near dovecote close?,"The area with the highest crimes is On Or Near Dovecote Close with 29 incidents.
+The most frequent outcome is 'Investigation Complete; No Suspect Identified' with 23 cases.",Under investigation,0.736,False,0.607,1.0,28,2026-05-05 19:59:54
+What is the most common crime type on or near albert place?,"The area with the highest crimes is On Or Near Albert Place with 15 incidents.
+The most common crime type is Violence And Sexual Offences with 16 cases.",Shoplifting,0.829,False,0.679,N/A,28,2026-05-05 19:59:54
+What is the most frequent outcome on or near silver street?,"The area with the highest crimes is On Or Near Silver Street with 18 incidents.
+The most frequent outcome is 'Investigation Complete; No Suspect Identified' with 25 cases.",Under investigation,0.704,False,0.536,1.0,28,2026-05-05 19:59:54
+What is the most frequent outcome on or near gilbert close?,"The area with the highest crimes is On Or Near Gilbert Close with 24 incidents.
+The most frequent outcome is 'Unable To Prosecute Suspect' with 20 cases.",Under investigation,0.672,False,0.519,1.0,27,2026-05-05 19:59:54
+What is the most frequent outcome on or near shopping area?,"The area with the highest crimes is On Or Near Shopping Area with 29 incidents.
+The most frequent outcome is 'Investigation Complete; No Suspect Identified' with 36 cases.",Investigation complete; no suspect identified,0.641,True,0.607,1.0,28,2026-05-05 19:59:54
+What is the most common crime type on or near macaulay avenue?,"The area with the highest crimes is On Or Near Skaters Way with 17 incidents.
+The most common crime type is Violence And Sexual Offences with 30 cases.",Violence and sexual offences,0.638,True,0.679,N/A,28,2026-05-05 19:59:54
+What is the most common crime type on or near ramsey road?,"The area with the highest crimes is On Or Near Ramsey Way with 12 incidents.
+The most common crime type is Violence And Sexual Offences with 20 cases.",Anti-social behaviour,0.816,False,0.679,N/A,28,2026-05-05 19:59:54
