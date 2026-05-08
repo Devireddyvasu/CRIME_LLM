@@ -57,10 +57,10 @@ db = FAISS.from_documents(chunks, embedding)
 # # ==============================
 # # SAVE DB
 # # ==============================
-# db.save_local("vector_db")
-# print("\nNumber of vectors stored in FAISS:")
-# print(db.index.ntotal)
-# print("✅ FAISS index built successfully!")
+db.save_local("vector_db")
+print("\nNumber of vectors stored in FAISS:")
+print(db.index.ntotal)
+print("✅ FAISS index built successfully!")
 
 # ==============================
 # RETRIEVAL (Step 5)

@@ -1,3 +1,4 @@
+VectorDB is very large folder
 ## Build Vector Database
 
 Run:
