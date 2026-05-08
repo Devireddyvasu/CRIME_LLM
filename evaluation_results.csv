@@ -1,7 +1,0 @@
-Query,Generated_Answer,Ground_Truth,Similarity_Score,Exact_Match,Response_Time_Seconds
-Which location has the most theft cases?,The area with the most crimes is peterborough 014a.,Peterborough 014A,1.0,True,0.065
-Where do crimes occur most?,The area with the most crimes is peterborough 014a.,Peterborough 014A,1.0,True,0.031
-Top area for theft incidents?,The area with the most crimes is peterborough 014a.,Peterborough 014A,1.0,True,0.032
-What is the most common crime type?,The most common crime type is violence and sexual offences.,Violence and sexual offences,1.0,True,0.037
-What is the most common outcome of crimes?,The most common outcome is under investigation.,Under investigation,1.0,True,0.039
-Where do crimes occur most and what type of crimes are common?,The area with the most crimes is peterborough 014a and the most common crime type is violence and sexual offences.,Peterborough 014A and Violence and sexual offences,1.0,False,0.063

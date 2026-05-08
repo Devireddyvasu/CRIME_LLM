@@ -7,12 +7,14 @@ __pycache__/
 env/
 
 # Data (optional - keep if large)
-#data/raw/
-#data/processed/
+data/raw/
+data/processed/
 
-# Chroma DB (if you add later)
+# Chroma DB 
 chroma_db/
-
+vector_db/
+*.faiss
+*.pkl
 # Results
 results/
 

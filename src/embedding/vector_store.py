@@ -1,6 +1,6 @@
 import json
 import os
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.docstore.document import Document
 from src.embedding.embedder import load_embedding_model
 
