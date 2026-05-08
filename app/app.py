@@ -22,10 +22,13 @@ model_choice = st.sidebar.selectbox(
     "Active Model",
     (
         "Local LLM (FLAN-T5) - Memory Efficient",
-        "VasuReddy07/Llama-3.2-Crime-QA (Requires High VRAM)",
-        "VasuReddy07/Qwen-2.5-Crime-QA (Requires High VRAM)"
+        "VasuReddy07/Llama-3.2-Crime-QA (API Inference)",
+        "VasuReddy07/Qwen-2.5-Crime-QA (API Inference)"
     )
 )
+
+st.sidebar.divider()
+hf_token = st.sidebar.text_input("🔑 HuggingFace API Key", type="password", help="Required to use the LLaMA or Qwen finetuned models via Cloud API.")
 
 # VRAM Monitor in Sidebar
 if torch.cuda.is_available():
@@ -41,21 +44,18 @@ if torch.cuda.is_available():
 st.title("🔍 Intelligent Crime Data QA System")
 st.markdown("Ask questions about crime data using Hybrid RAG + Custom Fine-Tuned ODIN Models")
 
-# Initialize Pipeline
-@st.cache_resource
-def load_pipeline():
-    return CrimeRAGPipeline()
-
-pipeline = load_pipeline()
+# Initialize Pipeline — no caching so model choice is always applied fresh
+pipeline = CrimeRAGPipeline()
 
 # Input box
 query = st.text_input("Enter your question about crime data:")
 
 if query:
-    if "Requires High VRAM" in model_choice:
-        st.warning(f"⚠️ **{model_choice.split(' ')[0]}** is selected. This model requires high VRAM and may cause OOM errors. Please select **Local LLM (FLAN-T5)** for inference.")
+    if "API Inference" in model_choice and not hf_token:
+        st.warning("⚠️ **HuggingFace API Key** is required to use the Finetuned Models. Please enter it in the sidebar. This ensures your local system does not crash!")
     else:
         with st.spinner("Processing RAG pipeline..."):
+            pipeline.set_model(model_choice, hf_token)
             answer, docs, metas = pipeline.run(query)
             
             # Evaluate the response

@@ -57,25 +57,25 @@ class LLMManager:
             else:
                 base_model_id = "meta-llama/Llama-3.2-3B-Instruct" # Fallback
 
-            # bnb_config = BitsAndBytesConfig(
-            #     load_in_4bit=True,
-            #     bnb_4bit_use_double_quant=True,
-            #     bnb_4bit_quant_type="nf4",
-            #     bnb_4bit_compute_dtype=torch.bfloat16
-            # )
+            bnb_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=torch.bfloat16,
+                llm_int8_enable_fp32_cpu_offload=True
+            )
 
-            # --- COMMENTED OUT TO PREVENT OOM CRASHES DUE TO LIMITED RAM ---
-            # self.tokenizer = AutoTokenizer.from_pretrained(base_model_id)
-            # base_model = AutoModelForCausalLM.from_pretrained(
-            #     base_model_id, 
-            #     device_map={"": "cpu"}, 
-            #     low_cpu_mem_usage=True,
-            #     trust_remote_code=True,
-            # )
-            # 
-            # # Load the LoRA weights
-            # self.model = PeftModel.from_pretrained(base_model, model_choice)
-            # ---------------------------------------------------------------
+            print(f"Loading base model {base_model_id} in 4-bit...")
+            self.tokenizer = AutoTokenizer.from_pretrained(base_model_id)
+            base_model = AutoModelForCausalLM.from_pretrained(
+                base_model_id, 
+                quantization_config=bnb_config,
+                device_map="auto", 
+                low_cpu_mem_usage=True,
+            )
+            
+            print(f"Loading LoRA weights {model_choice}...")
+            self.model = PeftModel.from_pretrained(base_model, model_choice)
             
         self.current_model_id = model_choice
 

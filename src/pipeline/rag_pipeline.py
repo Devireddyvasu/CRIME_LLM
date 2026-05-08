@@ -215,6 +215,18 @@ class CrimeRAGPipeline:
 
         print("Pipeline Ready")
 
+    def set_model(self, model_choice, hf_token=None):
+        if "API Inference" in model_choice:
+            repo_id = model_choice.split(" ")[0]
+            from src.llm.api_llm import APILLM
+            self.llm = APILLM(repo_id, hf_token)
+            print(f"Switched to API Model: {repo_id}")
+        else:
+            from src.llm.base_llm import LocalLLM
+            if not isinstance(self.llm, LocalLLM):
+                self.llm = LocalLLM()
+            print("Switched to Local Model (FLAN-T5)")
+
     # ==============================
     # PROMPT BUILDER (IMPROVED)
     # ==============================
@@ -247,7 +259,7 @@ Answer:
     # ==============================
     # MAIN RUN FUNCTION
     # ==============================
-    def run(self, query):
+    def run(self, query, force_llm=False):
 
         print(f"\nQuery: {query}")
 
@@ -279,7 +291,7 @@ Answer:
         # --------------------------
         # Step 4: ANALYTICAL (NO LLM)
         # --------------------------
-        if query_type == "analytical":
+        if query_type == "analytical" and not force_llm:
             intents = detect_intents(query)
             crime_counts, outcome_counts, location_counts, lsoa_counts, ward_counts, oa_counts, filtered_docs = extract_stats(docs, query)
 
